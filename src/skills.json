@@ -1,0 +1,14 @@
+[
+    {
+      "category": "Development",
+      "items": ["JavaScript","HTML","CSS","React.js","JAVA & Kotlin (basic)", "Python (basic)", "Node.js","Next.js", "Jest.js"]
+    },
+    {
+      "category": "Tools",
+      "items": ["VS Code","Android Studio","Linux","Windows","Git", "Github", "Figma","Jira", "Excell", "SOHO networks"]
+    },
+    {
+      "category": "Soft Skills",
+      "items": ["Active Comunication","Team Work","Growth Mindset","Detail Orientation","Teaching", "Empathy", "Adaptability","Curiosity", "profesionalism"]
+    }
+]

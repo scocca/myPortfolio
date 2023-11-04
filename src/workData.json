@@ -1,0 +1,20 @@
+[
+    {
+      "years": "2023",
+      "jobName": "FullStack Javascript Developer",
+      "jobAt": "Generation Chile",
+      "tasks": ["Scrum Master","Design & Development in Aquanet project","Coordinate & Document according to Agile Development Methodologies (SCRUM)","Features Development & Design"]
+    },
+    {
+      "years": "2021-2022",
+      "jobName": "Quality Control Inspector",
+      "jobAt": "Concha y Toro Vineyard S.A.",
+      "tasks": ["Quality Control Inspector in a Production System","Application of Food Safety & Quality Standards"]
+    },
+    {
+      "years": "2013-2020",
+      "jobName": "Inspector & Laboratory Technician",
+      "jobAt": "Dictuc S.A.",
+      "tasks": ["Laboratory testing","Fabrication of testing devices","Department Documentation","Report and Certificates writing","Field Inspector/Laboratory Techinician & Auditor","Compueter Systems Support","Inspections in National & International Factories/Companies"]
+    }
+]
