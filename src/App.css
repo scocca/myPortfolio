@@ -6,8 +6,10 @@ body{
   overflow-x: hidden;
 }
 #root{
-  width: 1140px;
+  width: 100vw;
   margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-main{
@@ -382,7 +384,7 @@ section img:hover{
   margin: 10px 0 16px 0;
 }
 
-.skills-container{
+/* .skills-container{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -439,7 +441,7 @@ section img:hover{
     background-position: 0 0;
   }
   
-}
+} */
 
 .card-title{
   margin: 0 auto;
@@ -529,3 +531,38 @@ section img:hover{
   #ws-icon:hover{
     cursor: pointer;
   }
+
+  .skills-main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+  }
+  .skills-h1{
+    text-align: center;
+    margin: 50px;
+    font-size: 60px;
+  }
+
+  .icons-section{  
+    display:grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(10,100px);
+    grid-template-rows: repeat(6, 110px);
+    margin-top: 12vh;
+
+  }
+  .icon-icons{
+    margin:10px;
+  }
+
+  .icon-icons:hover{
+    transform: scale(1.3);
+    transition: 0.3s ease-in-out;
+  }
+
+  .icon-detail{
+    display: none;
+  }
+  

@@ -11,7 +11,9 @@ function App() {
   return (
     <React.Fragment>
       <NavBar/>
+      <div>
       <Outlet/>
+      </div>
       <WhatsApp/>
     </React.Fragment>
   )

@@ -8,10 +8,10 @@ const recogHover=()=>{
         const {layerX, layerY} = evt
     
         const yRotation=(
-            (layerX-width/2)/width)*5
+            (layerX-width/2)/width)*2
     
         const xRotation=(
-            (layerY-height/2)/width)*5
+            (layerY-height/2)/width)*2
     
         const string =`
         perspective(200px)
