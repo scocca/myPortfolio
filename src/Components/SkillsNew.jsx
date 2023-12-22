@@ -61,7 +61,7 @@ import {AiFillSecurityScan} from 'react-icons/ai'
 import {SiHtmlacademy} from 'react-icons/si'
 import {FaJediOrder} from 'react-icons/fa'
 import { TodoList } from "../Components/TodoList"
-import { TodoItem } from "../Components/TodoItem"
+
 
 const icons =[
     {

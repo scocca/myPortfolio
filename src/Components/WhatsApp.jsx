@@ -1,4 +1,4 @@
-import { hoverEffect } from "./3d-hover"
+
 import { hoverEffectGit } from "../Scripts/hoverEffectGit"
 import { hoverEffectin } from "../Scripts/hoverEffect"
 
