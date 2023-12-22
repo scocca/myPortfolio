@@ -5,7 +5,7 @@ import { AboutMe } from '../layouts/AboutMe'
 import { WorkingExp } from '../layouts/WorkingExp'
 import { Recog } from '../layouts/Recog' 
 import { Skill } from "../layouts/Skills";
-
+import { GetInTouch } from "../layouts/GetInTouch";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/skills",
         element: <Skill />,
+      },
+      {
+        path: "/getintouch",
+        element: <GetInTouch/>
       },
     ],
   },

@@ -1,6 +1,6 @@
-const hoverEffectin=()=>{
+const hoverEffect=()=>{
 
-const el = document.getElementById('ws-icon')
+const el = document.getElementById('in-icon')
 const height = el.clientHeight
 const width = el.clientWidth
 
@@ -30,4 +30,4 @@ el.addEventListener('mouseout', ()=>{
     rotateY(0)`
 })
 }
-export {hoverEffectin}
+export {hoverEffect}

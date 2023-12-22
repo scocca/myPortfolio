@@ -20,11 +20,11 @@ const About=({photo1, photo2, photo3, photo4, photo5})=>{
         </div>
         <div className='photos'>
           <section className='photo-librarie'>
-            <img src={photo1} alt='my photos'/>
-            <img src={photo2} alt='my photos'/>
-            <img src={photo3} alt='my photos'/>
-            <img src={photo4} alt='my photos'/>
-            <img src={photo5} alt='my photos'/>
+            <img loading="lazy" src={photo1} alt='my photos'/>
+            <img loading="lazy" src={photo2} alt='my photos'/>
+            <img loading="lazy" src={photo3} alt='my photos'/>
+            <img loading="lazy" src={photo4} alt='my photos'/>
+            <img loading="lazy" src={photo5} alt='my photos'/>
           </section>
           
         </div>

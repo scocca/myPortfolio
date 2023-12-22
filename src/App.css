@@ -2,9 +2,10 @@ body{
   background-image: url('../src/assets/subtle-prism.svg');
   background-attachment: fixed;
   background-size: cover;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
 }
+
+
 #root{
   width: 100vw;
   margin: auto;
@@ -25,6 +26,7 @@ body{
 #navbarcont.navbar-container{
   width: 100%;
   display: contents;
+  
 }
 
 
@@ -33,36 +35,40 @@ body{
   display: inline-flex;
   justify-content: space-between;
   background-color: hwb(271 17% 11% / 0.511);
-  height: 36px;
+  height: 3.5rem;
 }
 
 .navbar-left{
   display: flex;
 }
+
 .navbar-left ul li ,
 .navbar-right ul li {
   text-decoration: none;
-  color: whitesmoke;
+  color: aliceblue;
   margin-inline: 12px;
   padding: 0px;
-  height: 24px;
+  /* height: 3.5rem; */
   align-items: center;
 }
 .navbar-left ul li :hover,
 .navbar-right ul li :hover{
-  color: plum;
+  color:azure;
   cursor: pointer;
 }
+
 .menu{
   display: none;
 }
+
 .navbar-left ul,
 .navbar-right ul{
   list-style: none;
   padding:0px;
   margin: 8px;
   display: flex;
-  align-items: center;
+  font-family: 'Play', sans-serif;
+  font-size: 1.6rem;
 }
 .navbar-left ul{
   margin-right: 50px;
@@ -90,7 +96,6 @@ body{
 
 .big-header{
   display: block;
-  margin: 76px auto;
   color: aliceblue;
   width: 100%;
 }
@@ -190,7 +195,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: self-end;
-  margin: 62px auto;
+  margin: auto;
   font-size: 26px;
   font-weight: 400;
 }
@@ -229,6 +234,7 @@ section img:hover{
 .personal-list{
   font-size: 30px;
   font-weight: 400;
+  margin-right: 40px;
 }
 
 .personal{
@@ -256,7 +262,7 @@ section img:hover{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: auto;
+  width: 350px;
   height: 400px;
   display: flex;
   align-items: center;
@@ -353,7 +359,8 @@ section img:hover{
 
 .right{
   display: flex;
-  width: 66%;
+  width: 70%;
+  height: 80vh;
   flex-direction: column;
   color: azure;
 }
@@ -384,64 +391,66 @@ section img:hover{
   margin: 10px 0 16px 0;
 }
 
-/* .skills-container{
+
+
+#icon-section-container{
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 18px;
+  height: 75vh;
+  width: 100%;
+}
+
+#lister{
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.main-card-container{
-  display: flex;
-  color: aliceblue;
-}
-
-.skills-h{
-  font-size: 48px;
-  color: aliceblue;
-  margin:0 auto;
-}
-
-.card-container{
-    height: 300px;
-    width: 200px;
-    border-radius: 25px;
-    background-color: #000000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin:50px 50px;
-    position:relative;
-    padding-inline: 12px;
-}
-
-.card-container::before{
-  content:"";
-  position:absolute;
-  top: 0;
-  left:0;
-  z-index: -1;
-  width: 100%;
+  margin: 10px;
+  padding: 12px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   height: 100%;
-  background: linear-gradient(45deg, #3339CF, #1BA462, #DEF9FA, #3339CF, #3339CF, #1BA462, #DEF9FA, #3339CF);
-  background-size: 800%;
-  border-radius: 10px;
-  filter: blur(8px);
-  animation: glowing 20s linear infinite
+  width: 80%;
+  border-radius: 12px 8px 8px 12px;
+  background-color: rgba(255, 255, 255, 0.315);
+  backdrop-filter: blur(4px)
 }
 
-@keyframes glowing {
-  0%{background-position: 0 0;
-  }
+#skill-card-in-list{
+  display: flex;
+  width: 95%;
+  height: 3rem;
+  margin: 0.8rem;
+  background-color: rgb(39, 4, 80);
+  border-radius: 15px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
 
-  50%{
-    background-position: 400% 0;
-  }
+#icon-container{
+  display: flex;
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-right: 2rem;
+  align-items: center;
+  justify-content: center;
+}
 
-  100%{
-    background-position: 0 0;
-  }
-  
-} */
+#skill-description{
+  font-size: 1rem;
+  margin-top: 0.8rem;
+}
+
+#progress-bar{
+  width: 65vw;
+  height: 2rem;
+  margin: 0 0 1rem;
+}
+
 
 .card-title{
   margin: 0 auto;
@@ -491,7 +500,7 @@ section img:hover{
 .recognition-detail{    display: flex;
   flex-direction: column;
   justify-content: end;
-  margin-left: 180px;
+  margin-left: 22rem;
 }
 
   .recog-year{
@@ -514,21 +523,58 @@ section img:hover{
     margin-bottom: 24px ;
   }
 
-  #ws-icon{
+  #pages-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
-    right: 24px;
-    bottom: 24px;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: rgba(240, 248, 255, 0.5);
+    border-radius: 3rem;
+  }
+
+  .responsive-contact{
+    display: none;
+  }
+
+  #ws-icon{
     background:
-     url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg')
+     url('../src/assets/icons8-whatsapp-192.svg')
      no-repeat
      center;
     background-size: cover;
-    width: 100px;
-    height: 100px;
+    width: 4rem;
+    height: 4rem;
     transition: .1s transform; 
+    margin: 1rem;
   }
 
-  #ws-icon:hover{
+  #in-icon{
+    background:
+     url('../src/assets/icons8-linkedin-192.svg')
+     no-repeat
+     center;
+    background-size: cover;
+    width: 4rem;
+    height: 4rem;
+    transition: .1s transform; 
+    margin: 1rem;
+  }
+
+  #github-icon{
+    background:
+     url('../src/assets/icons8-github-192.svg')
+     no-repeat
+     center;
+    background-size: cover;
+    width: 4rem;
+    height: 4rem;
+    transition: .1s transform; 
+    margin: 1rem;
+  }
+
+  .ws-container:hover{
     cursor: pointer;
   }
 
@@ -540,29 +586,567 @@ section img:hover{
   }
   .skills-h1{
     text-align: center;
-    margin: 50px;
-    font-size: 60px;
-  }
-
-  .icons-section{  
-    display:grid;
-    justify-items: center;
-    align-content: center;
-    grid-template-columns: repeat(10,100px);
-    grid-template-rows: repeat(6, 110px);
-    margin-top: 12vh;
-
-  }
-  .icon-icons{
-    margin:10px;
-  }
-
-  .icon-icons:hover{
-    transform: scale(1.3);
-    transition: 0.3s ease-in-out;
-  }
-
-  .icon-detail{
-    display: none;
+    margin: 3.5rem 0 0 0;
+    font-size: 3rem;
   }
   
+  #get-main-container{
+    width:50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.4);
+    border-radius: 1.5rem;
+    padding: 2rem;
+  }
+
+
+
+  #text-areas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+  }
+
+  #name-contact{
+    margin: 0.5rem;
+    height: 1rem;
+    width: 100%;
+
+  }
+
+  #subject{
+    margin: 0.5rem;
+    height: 1rem;
+    width: 100%;
+  }
+
+  #contact-body{
+    margin: 0.5rem;
+    height: 6rem;
+    width: 100%;
+  }
+
+  #send-button{
+    width: 90%;
+    margin-top: 1.5rem;
+  }
+
+  #send-button:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+  }
+  
+  #send-button::before{
+    content:"";
+    position:absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #3339CF, #fb0909, #8900fa, #3339CF, #3339CF, #fb0909, #8900fa, #3339CF);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite
+  }
+  
+  @keyframes glowing {
+    0%{background-position: 0 0;
+    }
+  
+    50%{
+      background-position: 400% 0;
+    }
+  
+    100%{
+      background-position: 0 0;
+    }
+  
+  }
+
+  @media (max-width:640px) {
+    body{
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background-image: ('../src/assets/subtle-prism.svg');
+    }
+    #root{
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+    }
+
+    #pages-container{
+      display: none;
+    }
+
+    .navbar{
+      width: 100vw;
+    }
+
+    .navbar-left{
+      display: none;
+    }
+
+    .navbar-right ul li{
+      font-size: 24px;
+    }
+
+
+    .workProfile{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+    }
+
+    .profile-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    
+    .name{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100vw;
+      text-align: center;
+    }
+
+    .hi-im{
+      font-size: 40px;
+      margin-top: 2rem;
+    }
+
+    .santiago{
+      font-size: 70px;
+      line-height: 100px;
+      width: 100vw;
+    }
+
+    .cocca{
+      font-size: 70px;
+      line-height: 100px;
+      width: 100vw;
+    }
+
+    .Web-developer{
+      font-size: 30px;
+    }
+
+    .work-profile-p{
+      text-align: center;
+      font-size: 20px;
+      width: 80vw;
+      margin-bottom: 0.5px;
+    }
+
+    .personal-profile{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-me{
+      font-size: 2rem;
+    }
+
+    .personal-list{
+      font-size: 1.5rem;
+    }
+    
+    .personal{
+      font-size: 1rem;
+    }
+
+    .photo-librarie{
+      width: 90vw;
+      height: 16rem;
+    }
+
+    section img:hover{
+      width:150px
+    }
+    
+    .skills-h1{
+      font-size: 1.8rem;
+    }
+
+    #skill-card-in-list{
+      margin-block: 0.3rem;;
+    }
+
+    #icon-container{
+      height: 2rem;
+      width: 2rem;
+      margin-right: 1rem;
+    }
+
+    .workContainer{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .experience-text{
+      font-size: 1.5rem;
+    }
+
+    .years-p{
+      font-size: 0.8rem;
+    }
+
+    .jobs-container{
+      flex-direction: column;
+    }
+
+    .job-name-h2{
+      font-size: 1rem;
+    }
+
+    .job-at-p{
+      font-size: 0.8rem;
+      margin: 0.2rem 0 0.2rem 0;
+    }
+
+    .tasks-ul{
+      margin: 2.2rem 0 0.5rem 0;
+      font-size: 0.8rem;
+    }
+
+    .we-bg{
+      display: none;
+    }
+
+    .recognitions-section{
+      width: 80vw;
+      height: 600px;
+      background-position: initial;
+    }
+
+    .recognitions-container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Recognitions{
+      font-size: 2rem;
+    }
+
+    .recognition-detail{
+      margin:auto 0.8rem 0.2rem 0.8rem;
+    }
+
+    .recog-year{
+      font-size: 1rem;
+    }
+
+    .recognition-name{
+      font-size: 1.2rem;
+    }
+
+    .institution{
+      font-size: 0.8rem;
+    }
+
+    .recog-p{
+      font-size: 1rem;
+      margin: 1rem auto 0.5rem auto;
+    }
+
+    #get-main-container{
+      padding: 0.5rem;
+      width: 80vw;
+      height: 45vh;
+    }
+
+    #get-title{
+      font-size: 2rem;
+    }
+
+    #name-contact{
+      width: 70vw;
+    }
+    #subject{
+      width: 70vw;
+    }
+    #contact-body{
+      width: 70vw;
+    }
+
+    .responsive-contact{
+      display: flex;
+      margin-top: 4rem;
+      background-color: rgba(240, 248, 255, 0.5);
+      border-radius: 3rem;
+    }
+  }
+
+  @media (max-width:844px)  and (min-width:641px) {
+    body{
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background-image: ('../src/assets/subtle-prism.svg');
+    }
+    #root{
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+    }
+
+    #pages-container{
+      height: 45vh;
+      width: 10vw;
+    }
+
+    .navbar{
+      width: 100vw;
+    }
+
+    .navbar-left{
+      display: none;
+    }
+
+    .navbar-right ul li{
+      font-size: 24px;
+    }
+
+
+    .workProfile{
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+    }
+
+    .profile-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 2.5rem auto auto 0rem;
+      width: 35vw;
+    }
+    
+    .name{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50vw;
+      margin-right: 0;;
+    } 
+
+    .hi-im{
+      font-size: 40px;
+      margin-top: 2rem;
+    }
+
+    .santiago{
+      font-size: 70px;
+      line-height: 100px;
+      width: 35vw;
+    }
+
+    .cocca{
+      font-size: 70px;
+      line-height: 100px;
+      width: 35vw;
+    }
+
+    .Web-developer{
+      font-size: 30px;
+      margin-top: 1rem;
+    }
+
+    .work-profile-p{
+      font-size: 1rem;
+      width: 30vw;
+      margin-bottom: 0.5px;
+      margin-left: 0;
+    }
+
+
+
+    .personal-profile{
+      display: flex;
+      width: 100vw;
+      margin-top: 2rem;
+      align-items: center;
+
+    }
+
+    .about-me{
+      font-size: 2rem;
+      width: 40vw;
+      margin:0;
+      /* margin-top: 2rem; */
+    }
+
+    .personal-list{
+      font-size: 1rem;
+      margin: 0;
+      width: 100%;
+      margin-right: 1rem;
+      padding: 0;
+      line-height: 1.6rem;
+    }
+    
+    .personal{
+      font-size: 1rem;
+    }
+
+    .photo-librarie{
+      width:40vw;
+      height: 16rem;
+      margin-top: 1.5rem;
+      margin-right: 7rem;
+    }
+
+    section img:hover{
+      width:150px
+    }
+
+
+    
+    .skills-h1{
+      font-size: 1.8rem;
+    }
+
+    #lister{
+      margin-right: 7rem;
+    }
+
+    #skill-card-in-list{
+      margin-block: 0.3rem;;
+    }
+
+    #icon-container{
+      height: 2rem;
+      width: 2rem;
+      margin-right: 1rem;
+    }
+
+
+    .workContainer{
+      display: block;
+      scroll-behavior: smooth;
+      overflow-y:auto;
+      height: 60vh;
+      width: 70vw;
+      position: absolute;
+      top: 3rem;
+      left: 2rem
+      
+    }
+    
+    .experience-text{
+      font-size: 1.5rem;
+    }
+
+    .we-bg{
+      display: none;
+    }
+
+    .years-p{
+      font-size: 0.8rem;
+    }
+
+    .jobs-container{
+      flex-direction: column;
+    }
+
+    .job-name-h2{
+      font-size: 1rem;
+    }
+
+    .job-at-p{
+      font-size: 0.8rem;
+      margin: 0.2rem 0 0.2rem 0;
+    }
+
+    .tasks-ul{
+      margin: 2.2rem 0 0.5rem 0;
+      font-size: 0.8rem;
+    }
+
+
+
+    .recognitions-section{
+      display: block;
+      position: absolute;
+      top: 0rem;
+      left: 3rem;
+      width: 80vw;
+      height: fit-content;
+      background-position: initial;
+    }
+
+    .recognitions-container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    #recog-hover{
+      height: auto;
+    }
+
+
+    .Recognitions{
+      font-size: 2rem;
+      line-height: 2rem;
+      margin: 0.5rem 0 0 0.8rem;
+    }
+    .recognition-detail{
+      margin-top: 1rem;
+    }
+
+    .recog-year{
+      font-size: 1rem;
+    }
+
+    .recognition-name{
+      font-size: 1.2rem;
+    }
+
+    .institution{
+      font-size: 0.8rem;
+    }
+
+    .recog-p{
+      font-size: 1rem;
+      margin: 1rem auto 0.5rem auto;
+    }
+
+    /* Listo */
+
+    #get-main-container{
+      padding: 0.5rem;
+      width: 70vw;
+      height: 75vh;
+      margin-top: 2.6rem;
+      margin-right: 2rem;
+    }
+
+    #get-title{
+      font-size: 2rem;
+      margin: 0 ;
+    }
+
+    #name-contact{
+      width: 70vw;
+    }
+    #subject{
+      width: 70vw;
+    }
+    #contact-body{
+      width: 70vw;
+    }
+
+  }

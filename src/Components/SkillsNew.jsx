@@ -52,13 +52,16 @@ import {SiOpera} from 'react-icons/si'
 import {RiFileExcel2Fill} from 'react-icons/ri'
 import {RiUserVoiceFill} from 'react-icons/ri'
 import {RiTeamFill} from 'react-icons/ri'
-import {GrGrow} from 'react-icons/gr'
+// import {GrGrow} from 'react-icons/gr'
+import { GiStumpRegrowth } from "react-icons/gi";
 import {TbListDetails} from 'react-icons/tb'
 import {RiEmpathizeFill} from 'react-icons/ri'
 import {MdOutlinePublishedWithChanges} from 'react-icons/md'
 import {AiFillSecurityScan} from 'react-icons/ai'
 import {SiHtmlacademy} from 'react-icons/si'
 import {FaJediOrder} from 'react-icons/fa'
+import { TodoList } from "../Components/TodoList"
+import { TodoItem } from "../Components/TodoItem"
 
 const icons =[
     {
@@ -257,7 +260,7 @@ const icons =[
         "Icon":<SiIntellijidea className='icons-icon'/>,
         "category": "development",
         "level" : 60,
-        "text": "Git"
+        "text": "Intelli J Idea"
     },
     {
         "Icon":<SiMdnwebdocs className='icons-icon'/>,
@@ -346,7 +349,7 @@ const icons =[
     {
         "Icon":<SiCisco className='icons-icon'/>,
         "category": "tool",
-        "level" : 3,
+        "level" : 45,
         "text": "Cisco networks"
     },
     {
@@ -374,7 +377,7 @@ const icons =[
         "text": "Active Communication"
     },
     {
-        "Icon":<GrGrow className='icons-icon'/>,
+        "Icon":<GiStumpRegrowth className='icons-icon'/>,
         "category": "soft",
         "level" : 90,
         "text": "Growth Mindset"
@@ -427,17 +430,21 @@ const SkillsNew = () =>{
     return(
         <main className='skills-main'>
             <h1 className='skills-h1'>My Skills</h1>
-           
-            <section className='icons-section'>
-            <IconContext.Provider value={{ className: "icon-icons", size: 75 }}>
-                {icons.map((icons)=>(            
-                    <div className='icon-containter' key={icons.category}>{icons.Icon}
-                    <p className='icon-detail'>{icons.text}</p>
-                    </div>
-                ))}
-                 </IconContext.Provider>
-            </section>
-            
+        <div id="icon-section-container">           
+                    <TodoList>
+                    <IconContext.Provider value={{ className: "icon-icons", size: 90 }}>
+                        {icons.map((icons)=>(
+                            <li key = {icons.text} id="skill-card-in-list">
+                                <span id="icon-container">{icons.Icon}</span>
+                                <div id="skill-description">
+                                <p id="skill-description">{icons.text}</p>
+                                <progress id="progress-bar" max={100} value={icons.level}>{icons.level}%</progress>
+                                </div>
+                            </li>
+                        ))}
+                        </IconContext.Provider>
+                    </TodoList> 
+        </div>
         </main>
     )
 }
